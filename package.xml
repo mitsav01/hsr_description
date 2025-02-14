@@ -1,5 +1,4 @@
-<?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>hsr_description</name>
   <version>1.1.0</version>
   <description>URDF files for Toyota HSR</description>
@@ -19,13 +18,14 @@
   <author>Yuto Mori</author>
   <author>Yoshimi Iyoda</author>
 
-  <buildtool_depend>catkin</buildtool_depend>
-
-  <depend>xacro</depend>
-  <depend>rosbash</depend>
-
-  <exec_depend>robot_state_publisher</exec_depend>
-  <exec_depend>joint_state_publisher</exec_depend>
+  <!-- Build tool dependencies for ROS 2 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
   <exec_depend>hsr_meshes</exec_depend>
-  <exec_depend>rviz</exec_depend>
+  <!-- Export section for ROS 2 -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>

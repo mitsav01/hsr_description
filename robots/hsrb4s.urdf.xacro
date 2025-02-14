@@ -72,7 +72,7 @@ POSSIBILITY OF SUCH DAMAGE.
     </xacro:hsrb_wrist>
 
     <xacro:hsrb_hand prefix="hand" parent="wrist_roll_link">
-        <origin xyz="0.012 0.0 0.1405" rpy="0.0 0.0 ${pi}"/>
+        <origin xyz="0.012 0.0 0.1405" rpy="0.0 0.0 3.141592653589793"/>
     </xacro:hsrb_hand>
 
     <gazebo>

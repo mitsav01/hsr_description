@@ -31,7 +31,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
   <xacro:arg name="implicit_damping" default="false" />
 
-  <xacro:property name="pi" value="3.14159265359"/>
+
 
   <xacro:macro name="hsrb_position_joint_transmission" params="joint reduction">
      <transmission name="${joint}_transmission">
