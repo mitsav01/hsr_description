@@ -56,10 +56,10 @@ POSSIBILITY OF SUCH DAMAGE.
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/wrist_v0/wrist_flex.dae" />
+                        <mesh filename="package://hsr_description/meshes/wrist_v0/wrist_flex.dae" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/wrist_v0/wrist_flex.obj" />
+                        <mesh filename="package://hsr_description/meshes/wrist_v0/wrist_flex.obj" />
                     </xacro:if>
                 </geometry>
                 <material name="body_sub" />
@@ -101,17 +101,17 @@ POSSIBILITY OF SUCH DAMAGE.
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/wrist_v0/wrist_roll.dae" />
+                        <mesh filename="package://hsr_description/meshes/wrist_v0/wrist_roll.dae" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/wrist_v0/wrist_roll.obj" />
+                        <mesh filename="package://hsr_description/meshes/wrist_v0/wrist_roll.obj" />
                     </xacro:if>
                 </geometry>
             </visual>
 
             <collision>
                 <geometry>
-                    <mesh filename="package://hsr_meshes/meshes/wrist_v0/wrist_roll.stl" />
+                    <mesh filename="package://hsr_description/meshes/wrist_v0/wrist_roll.stl" />
                 </geometry>
             </collision>
         </link>

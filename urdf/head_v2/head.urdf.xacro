@@ -59,17 +59,17 @@ POSSIBILITY OF SUCH DAMAGE.
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/head_v1/head_pan.dae" />
+                        <mesh filename="package://hsr_description/meshes/head_v1/head_pan.dae" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/head_v1/head_pan.obj" />
+                        <mesh filename="package://hsr_description/meshes/head_v1/head_pan.obj" />
                     </xacro:if>
                 </geometry>
             </visual>
 
             <collision>
                 <geometry>
-                    <mesh filename="package://hsr_meshes/meshes/head_v1/head_pan.stl" />
+                    <mesh filename="package://hsr_description/meshes/head_v1/head_pan.stl" />
                 </geometry>
             </collision>
         </link>
@@ -95,41 +95,41 @@ POSSIBILITY OF SUCH DAMAGE.
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/head_v1/head_upper.dae" />
+                        <mesh filename="package://hsr_description/meshes/head_v1/head_upper.dae" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/head_v1/head_upper.obj" />
+                        <mesh filename="package://hsr_description/meshes/head_v1/head_upper.obj" />
                     </xacro:if>
                 </geometry>
             </visual>
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/head_v1/head_tilt.dae" />
+                        <mesh filename="package://hsr_description/meshes/head_v1/head_tilt.dae" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/head_v1/head_tilt.obj" />
+                        <mesh filename="package://hsr_description/meshes/head_v1/head_tilt.obj" />
                     </xacro:if>
                 </geometry>
             </visual>
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/head_v1/tablet_base.dae" />
+                        <mesh filename="package://hsr_description/meshes/head_v1/tablet_base.dae" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/head_v1/tablet_base.obj" />
+                        <mesh filename="package://hsr_description/meshes/head_v1/tablet_base.obj" />
                     </xacro:if>
                 </geometry>
             </visual>
             <collision>
                 <geometry>
-                    <mesh filename="package://hsr_meshes/meshes/head_v1/head.stl" />
+                    <mesh filename="package://hsr_description/meshes/head_v1/head.stl" />
                 </geometry>
             </collision>
             <collision>
                 <geometry>
-                    <mesh filename="package://hsr_meshes/meshes/head_v1/tablet.stl" />
+                    <mesh filename="package://hsr_description/meshes/head_v1/tablet.stl" />
                 </geometry>
             </collision>
         </link>

@@ -5,18 +5,17 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import Command, FindExecutable, LaunchConfiguration
 from launch_ros.actions import Node
-
+from launch_ros.parameter_descriptions import ParameterValue
 
 def generate_launch_description():
 
-    # Path to the generated URDF file
-    robot_description_file = '/tmp/hsrb4s_with_fake_joints.urdf'
+    hsr_xacro_file = os.path.join(
+        get_package_share_directory('hsr_description'), 'robots', 'hsrb4s_with_fake_joints.urdf.xacro')
 
-    # Read the URDF file content
-    with open(robot_description_file, 'r') as urdf_file:
-        robot_description = urdf_file.read()
+    # Correctly process the robot_description
+    robot_description_content = Command([FindExecutable(name='xacro'), ' ', hsr_xacro_file])
+    robot_description = ParameterValue(robot_description_content, value_type=str)
 
-    # Path to RViz configuration
     rviz_file = os.path.join(get_package_share_directory('hsr_description'), 'rviz2', 'display.rviz')
 
     return LaunchDescription([

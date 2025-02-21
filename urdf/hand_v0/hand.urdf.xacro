@@ -75,10 +75,10 @@ POSSIBILITY OF SUCH DAMAGE.
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/hand_v0/palm.stl" />
+                        <mesh filename="package://hsr_description/meshes/hand_v0/palm.stl" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/hand_v0/palm.obj" />
+                        <mesh filename="package://hsr_description/meshes/hand_v0/palm.obj" />
                     </xacro:if>
                 </geometry>
                 <material name="body_sub" />
@@ -86,7 +86,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
             <collision>
                 <geometry>
-                    <mesh filename="package://hsr_meshes/meshes/hand_v0/palm.stl" />
+                    <mesh filename="package://hsr_description/meshes/hand_v0/palm.stl" />
                 </geometry>
             </collision>
         </link>
@@ -212,10 +212,10 @@ POSSIBILITY OF SUCH DAMAGE.
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/hand_v0/l_proximal.stl" />
+                        <mesh filename="package://hsr_description/meshes/hand_v0/l_proximal.stl" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/hand_v0/l_proximal.obj" />
+                        <mesh filename="package://hsr_description/meshes/hand_v0/l_proximal.obj" />
                     </xacro:if>
                 </geometry>
                 <material name="body_sub" />
@@ -223,7 +223,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
             <collision>
                 <geometry>
-                    <mesh filename="package://hsr_meshes/meshes/hand_v0/l_proximal.stl" />
+                    <mesh filename="package://hsr_description/meshes/hand_v0/l_proximal.stl" />
                 </geometry>
             </collision>
         </link>
@@ -244,10 +244,10 @@ POSSIBILITY OF SUCH DAMAGE.
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/hand_v0/l_distal.stl" />
+                        <mesh filename="package://hsr_description/meshes/hand_v0/l_distal.stl" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/hand_v0/l_distal.obj" />
+                        <mesh filename="package://hsr_description/meshes/hand_v0/l_distal.obj" />
                     </xacro:if>
                 </geometry>
                 <material name="body_sub" />
@@ -255,7 +255,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
             <collision>
                 <geometry>
-                    <mesh filename="package://hsr_meshes/meshes/hand_v0/l_distal.stl" />
+                    <mesh filename="package://hsr_description/meshes/hand_v0/l_distal.stl" />
                 </geometry>
             </collision>
         </link>
@@ -310,10 +310,10 @@ POSSIBILITY OF SUCH DAMAGE.
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/hand_v0/r_proximal.stl" />
+                        <mesh filename="package://hsr_description/meshes/hand_v0/r_proximal.stl" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/hand_v0/r_proximal.obj" />
+                        <mesh filename="package://hsr_description/meshes/hand_v0/r_proximal.obj" />
                     </xacro:if>
                 </geometry>
                 <material name="body_sub" />
@@ -321,7 +321,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
             <collision>
                 <geometry>
-                    <mesh filename="package://hsr_meshes/meshes/hand_v0/r_proximal.stl" />
+                    <mesh filename="package://hsr_description/meshes/hand_v0/r_proximal.stl" />
                 </geometry>
             </collision>
         </link>
@@ -342,10 +342,10 @@ POSSIBILITY OF SUCH DAMAGE.
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/hand_v0/r_distal.stl" />
+                        <mesh filename="package://hsr_description/meshes/hand_v0/r_distal.stl" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/hand_v0/r_distal.obj" />
+                        <mesh filename="package://hsr_description/meshes/hand_v0/r_distal.obj" />
                     </xacro:if>
                 </geometry>
                 <material name="body_sub" />
@@ -353,7 +353,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
             <collision>
                 <geometry>
-                    <mesh filename="package://hsr_meshes/meshes/hand_v0/r_distal.stl" />
+                    <mesh filename="package://hsr_description/meshes/hand_v0/r_distal.stl" />
                 </geometry>
             </collision>
         </link>

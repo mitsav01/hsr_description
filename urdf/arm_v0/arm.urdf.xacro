@@ -55,17 +55,17 @@ POSSIBILITY OF SUCH DAMAGE.
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/arm_v0/shoulder.dae" />
+                        <mesh filename="package://hsr_description/meshes/arm_v0/shoulder.dae" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/arm_v0/shoulder.obj" />
+                        <mesh filename="package://hsr_description/meshes/arm_v0/shoulder.obj" />
                     </xacro:if>
                 </geometry>
             </visual>
 
             <collision>
                 <geometry>
-                    <mesh filename="package://hsr_meshes/meshes/arm_v0/shoulder.stl" />
+                    <mesh filename="package://hsr_description/meshes/arm_v0/shoulder.stl" />
                 </geometry>
             </collision>
         </link>
@@ -91,17 +91,17 @@ POSSIBILITY OF SUCH DAMAGE.
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/arm_v0/arm_flex_light.dae" />
+                        <mesh filename="package://hsr_description/meshes/arm_v0/arm_flex_light.dae" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/arm_v0/arm_flex_light.obj" />
+                        <mesh filename="package://hsr_description/meshes/arm_v0/arm_flex_light.obj" />
                     </xacro:if>
                 </geometry>
             </visual>
 
             <collision>
                 <geometry>
-                    <mesh filename="package://hsr_meshes/meshes/arm_v0/arm_flex.stl" />
+                    <mesh filename="package://hsr_description/meshes/arm_v0/arm_flex.stl" />
                 </geometry>
             </collision>
         </link>
@@ -127,17 +127,17 @@ POSSIBILITY OF SUCH DAMAGE.
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/arm_v0/arm_roll_light.dae" />
+                        <mesh filename="package://hsr_description/meshes/arm_v0/arm_roll_light.dae" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/arm_v0/arm_roll_light.obj" />
+                        <mesh filename="package://hsr_description/meshes/arm_v0/arm_roll_light.obj" />
                     </xacro:if>
                 </geometry>
             </visual>
 
             <collision>
                 <geometry>
-                    <mesh filename="package://hsr_meshes/meshes/arm_v0/arm_roll.stl" />
+                    <mesh filename="package://hsr_description/meshes/arm_v0/arm_roll.stl" />
                 </geometry>
             </collision>
         </link>

@@ -42,10 +42,10 @@ POSSIBILITY OF SUCH DAMAGE.
                 <origin xyz="0 0 0" rpy="0.0 0.0 0.0"/>
                 <geometry>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/sensors/head_camera.obj" />
+                        <mesh filename="package://hsr_description/meshes/sensors/head_camera.obj" />
                     </xacro:if>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/sensors/head_camera.dae" />
+                        <mesh filename="package://hsr_description/meshes/sensors/head_camera.dae" />
                     </xacro:unless>
                 </geometry>
             </visual>

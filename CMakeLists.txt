@@ -3,13 +3,13 @@ project(hsr_description)
 
 # Find ament packages and dependencies
 find_package(ament_cmake REQUIRED)
-
+#find_package(hsr_meshes REQUIRED)
 # Specify package dependencies here (add other dependencies as needed)
 #find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
 # Install directories (if there are specific resources to install)
-install(DIRECTORY launch urdf robots rviz2
+install(DIRECTORY launch urdf robots rviz2 meshes
   DESTINATION share/${PROJECT_NAME}
 )
 

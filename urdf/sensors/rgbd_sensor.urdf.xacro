@@ -42,10 +42,10 @@ POSSIBILITY OF SUCH DAMAGE.
                 <origin xyz="0 0 0" rpy="0.0 0.0 0.0"/>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/sensors/rgbd_light.dae" />
+                        <mesh filename="package://hsr_description/meshes/sensors/rgbd_light.dae" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/sensors/rgbd_light.obj" />
+                        <mesh filename="package://hsr_description/meshes/sensors/rgbd_light.obj" />
                     </xacro:if>
                 </geometry>
             </visual>
@@ -53,7 +53,7 @@ POSSIBILITY OF SUCH DAMAGE.
             <collision>
                 <origin xyz="0 0 0" rpy="0.0 0.0 0.0"/>
                 <geometry>
-                    <mesh filename="package://hsr_meshes/meshes/sensors/rgbd.stl" />
+                    <mesh filename="package://hsr_description/meshes/sensors/rgbd.stl" />
                 </geometry>
             </collision>
         </link>

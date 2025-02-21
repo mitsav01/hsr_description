@@ -163,37 +163,37 @@ POSSIBILITY OF SUCH DAMAGE.
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/base_v2/base_light.dae" />
+                        <mesh filename="package://hsr_description/meshes/base_v2/base_light.dae" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/base_v2/base_light.obj" />
+                        <mesh filename="package://hsr_description/meshes/base_v2/base_light.obj" />
                     </xacro:if>
                 </geometry>
             </visual>
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/base_v2/body_light.dae" />
+                        <mesh filename="package://hsr_description/meshes/base_v2/body_light.dae" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/base_v2/body_light.obj" />
+                        <mesh filename="package://hsr_description/meshes/base_v2/body_light.obj" />
                     </xacro:if>
                 </geometry>
             </visual>
             <visual>
                 <geometry>
                     <xacro:unless value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/base_v2/torso_base.dae" />
+                        <mesh filename="package://hsr_description/meshes/base_v2/torso_base.dae" />
                     </xacro:unless>
                     <xacro:if value="${g_use_obj_for_visual}">
-                        <mesh filename="package://hsr_meshes/meshes/base_v2/torso_base.obj" />
+                        <mesh filename="package://hsr_description/meshes/base_v2/torso_base.obj" />
                     </xacro:if>
                 </geometry>
             </visual>
 
             <collision>
                 <geometry>
-                    <mesh filename="package://hsr_meshes/meshes/base_v2/base.stl" />
+                    <mesh filename="package://hsr_description/meshes/base_v2/base.stl" />
                 </geometry>
             </collision>
         </link>
